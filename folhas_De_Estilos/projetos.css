@@ -1,0 +1,542 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    background-size: auto 220vh;
+    height: 100vh;
+    background-color: #FFFAFA;
+}
+
+input#control-nav {
+    visibility: visible;
+}
+
+input#control-nav {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+.menu {
+    z-index: 10;
+    bottom: 0;
+    top: 0;
+}
+.corpo {
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-template-rows: 100%;
+    height: 100vh;
+    grid-template-areas: 'header main';
+}
+header {
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    grid-area: header;
+    z-index: 10;
+}
+.corpo .menu img {
+    height: 260px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 35px;
+    border-radius: 60px;
+    text-shadow: 50px 50px 50px rgb(203, 178, 189);
+    z-index: 10;
+}
+.corpo .menu {
+    background-color: rgb(249, 232, 247);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    z-index: 10;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 1px;
+    transition: background-color 1s, color 0.9s;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px rgb(203, 178, 189);
+    padding: 10px;
+    z-index: 10;
+}
+
+
+    .menu a:hover {
+        background-color: rgba(200, 170, 180, 0.2);
+        color: rgb(203, 178, 189);
+        border-radius: 50px;
+    }
+
+.menu li {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-left: 1px solid #eceff5;
+    z-index: 10;
+    position:relative;
+}
+
+.menu ul {
+    justify-content: space-around;
+    
+    z-index: 9999;
+}
+  
+.title {
+    font-size: 2.8em;
+    font-family: 'Bebas Neue', cursive;
+    display: block;
+    position: relative;
+    text-align: center;
+    color: rgb(209, 138, 162);
+}
+
+h3 {
+    color: rgb(226, 188, 195);
+    margin-top: 5px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 10px;
+    text-align: center;
+    top:2px;
+}
+
+.projetos-text {
+    margin-top: 1px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 25px;
+    padding-left: 1px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    top: 15px;
+}
+
+main {
+    font-family: 'Cutive Mono', monospace;
+    margin-right: 5em;
+    grid-area: main;
+    position: fixed;
+    margin-right: 50px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+  
+}
+
+    main h2 {
+        font-style: italic;
+        font-family: 'Special Elite', cursive;
+        line-height: 2.5em;
+        color: rgb(206, 166, 171);
+       margin-top:5px;
+        margin-left: 60px;
+        top:0px;
+    }
+.img-portfolio {
+    height: 160px;
+    width: 105%;
+    object-fit: cover;
+    object-position: left bottom;
+    grid-gap: 1em;
+    padding: 0px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.portfolio .grid {
+    grid-template-columns: repeat(2,260px);
+    /*cada p´x é uma coluna*/
+    justify-content: center;
+    grid-gap: 5em;
+}
+
+@media (min-width: 1200px){
+    .img-portfolio {
+        height:8.5em;
+        
+    }
+    .portfolio .grid {
+        grid-template-columns: repeat(2,290px);
+        /*cada p´x é uma coluna*/
+        justify-content: center;
+        grid-gap: 2em;
+    }
+    /*em é sempre vezes o tamanho da fonte*/
+}
+.portfolio {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+   top:550px;
+    margin-left:290px;
+}
+    .portfolio .grid {
+        /*seletor hierárquico - seleciona todos os elementos com a classe grid que estão dentro de um outro elemento que tem a classe portfolio*/
+        display: grid; /*forma uma grade, não força coluna, o programador diz a quantidade de linhas para usar*/
+        grid-gap: 2.5em; /*define o espaçamento entre cada linha ou coluna do grid. Usa ao invés do margin*/
+    }
+
+
+@media (min-width:2000px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(4,290px);
+        /*cada p´x é uma coluna*/
+        justify-content: center;
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+    /*recebe herança!*/
+    /*  flex- CSS decide grid-programador decide o totald e colunas*/
+}
+
+@media screen and (max-width: 595px) {
+
+    header .control-nav {
+        position: absolute;
+        right: 35px;
+        top: 20px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid #333;
+        border-width: 3px 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+        header .control-nav:before {
+            content: "";
+            display: block;
+            height: 3px;
+            background: #333;
+        }
+
+    header .control-nav-close {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: rgba(0,0,0,0.4);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 250px;
+        border-left: 1px solid #ccc;
+        background: #fff;
+        overflow-x: auto;
+        z-index: 2;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+
+    #control-nav:checked ~ .control-nav-close {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    #control-nav:checked ~ nav {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .img-portfolio {
+        height: 160px;
+        width: 300px;
+        object-fit: cover;
+        object-position: left bottom;
+        grid-gap: 1em;
+        padding: 0px;
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+        grid-area: header;
+        z-index: 10;
+    }
+    .projetos-text {
+        margin-top: 1px;
+        font-family: 'Cutive Mono', monospace;
+        font-size: 18px;
+        padding-left: 1px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 6px;
+        top: 15px;
+        display:grid;
+        text-align: center;
+        grid-template-columns: 4.2fr 1.5fr;
+        grid-template-rows: 100%;
+        justify-content: center;
+
+    }
+
+    .portfolio .grid {
+        grid-template-columns: repeat(1,100px);
+        /*cada p´x é uma coluna*/
+        justify-content: center;
+       
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    header .control-nav {
+        position: absolute;
+        right: 35px;
+        top: 20px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid #333;
+        border-width: 3px 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+        header .control-nav:before {
+            content: "";
+            display: block;
+            height: 3px;
+            background: #333;
+        }
+
+    header .control-nav-close {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        z-index: 1;
+        background: rgba(0,0,0,0.4);
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 250px;
+        border-left: 1px solid #ccc;
+        background: #fff;
+        overflow-x: auto;
+        z-index: 2;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+
+    #control-nav:checked ~ .control-nav-close {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    #control-nav:checked ~ nav {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .img-portfolio {
+        height: 160px;
+        width: 300px;
+        object-fit: cover;
+        object-position: left bottom;
+        grid-gap: 1em;
+        padding: 0px;
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        grid-area: header;
+        z-index: 10;
+    }
+    .portfolio .grid {
+        grid-template-columns: repeat(2,260px);
+        /*cada p´x é uma coluna*/
+        justify-content: center;
+        grid-gap: 5em;
+    }
+    .projetos-text {
+        margin-top: 1px;
+        font-family: 'Cutive Mono', monospace;
+        font-size: 17px;
+        padding-left: 1px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 6px;
+        top: 15px;
+        text-align: center;
+       
+        grid-template-columns: 4.2fr 1.5fr;
+        grid-template-rows: 100%;
+        justify-content: center;
+    }
+}
+
+
+    h1 {
+        margin-left: -140px;
+        padding-top: 60px;
+    }
+
+    p {
+        margin-left: -140px;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+
+    .img-portfolio :hover {
+        transform: scale(0.2);
+    }
+
+    .portfolio {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        top: 1px;
+        margin-left: 1px;
+        margin-right: 150px;
+    }
+
+    main {
+        font-family: 'Cutive Mono', monospace;
+        margin-right: 5em;
+        grid-area: main;
+        position: relative;
+        margin-right: 50px;
+    }
+
+.projetos-text {
+    margin-top: 1px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 18px;
+    padding-left: 1px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    top: 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 4.2fr 1.5fr;
+    grid-template-rows: 100%;
+    justify-content: center;
+}
+
+
+
+main p {
+    text-align: justify;
+    font-size: 1.3em;
+    color: rgb(0, 0, 26);
+    line-height: 1.2em;
+    text-indent:1.4em;
+}
+
+figcaption {
+    color: #A9A9A9;
+    margin-top: 5px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 15px;
+    text-align: center;
+    top: 2px;
+}
+
+.img-portfolio :hover {
+   
+    transform: scale(1.4);
+}
+
+.subtitle-site:after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .8s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="./folhas_De_Estilos\sobre.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab&family=Julius+Sans+One&family=Montserrat+Alternates:ital,wght@1,200&family=Orbitron&family=Press+Start+2P&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="https://image.flaticon.com/icons/png/512/74/74971.png" />
+
+</head>
+<body>
+    <div class="corpo">
+        <header>
+
+            <input type="checkbox" id="control-nav" />
+            <label for="control-nav" class="control-nav">
+                
+            </label>
+            <label for="control-nav" class="control-nav-close"></label>
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+            <nav class='menu'>
+                <ul>
+                    <li><img src="https://image.freepik.com/vector-gratis/programador-trabajando-computadora_23-2148312610.jpg" /></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href='projetos.html'>Projetos</a></li>
+                    <li><a href='sobre.html'>Sobre</a></li>
+                    <li><a href='index.html'>Contato</a></li>
+                    <li><h3> Desenvolvido, bagunçado e um <br />pouco copiado por Daniele Oliveira.</h3></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 class="subtitle-site">Sobre</h2>
+            <p>
+              Aspirante a programadora Backend, apaixonada por astronomia e estudante Frontend. Atualmente, sigo na missão de terminar o ensino médio, mas penso em ingressar em um curso de Ciência da computação, para aprofundar e melhorar meus conhecimentos de programação e trabalhar nessa área.
+            </p><br />
+            <p>
+              Essa foi minha primeira experiência de criação de site com HTML e CSS e espero conhecer cada vez mais, já que tenho MUITO a melhorar. Todas as coisas aqui são apenas alguns detalhes sobre minha tentativa de ser programadora, mas manter em constante atualização é uma meta.
+            </p>
+            <br />
+            <p>Esse site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS.</a> Obrigada Alura!, por ensinar tão bem assuntos de tecnologia e entrenter com conteúdo nesse momento difícil.</p>
+        </main>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function typeWrite(elemento) {
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = ' ';
+        textoArray.forEach(function (letra, i) {
+            setTimeout(function () {
+                elemento.innerHTML += letra;
+            }, 230 * i)
+
+        });
+    }
+    const titulo = document.querySelector('.subtitle-site');
+    typeWrite(titulo);
+
+</script>

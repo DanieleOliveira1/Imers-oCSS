@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name='viewport' content="width=device-width, initial-scale=1.0" />
+        <title>Daniele Oliveira</title><link rel="shortcut icon" href="favicon.ico">
+        <link rel='stylesheet' href="./folhas_De_Estilos\folha_de_estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab&family=Julius+Sans+One&family=Montserrat+Alternates:ital,wght@1,200&family=Orbitron&family=Press+Start+2P&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ce33f17360.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="imagem/png" href="https://image.flaticon.com/icons/png/512/74/74971.png" />
+
+    </head> 
+
+    <body>
+
+        <div class="overlay">
+        </div>
+
+        <div class="corpo">
+            <header>
+                <nav class='menu'>
+                    <ul>
+                        <li><a href='sobre.html'> Sobre</a></li>
+                        <li><a href='projetos.html'>Projetos</a></li>
+                        <li><a href='#'>Contato</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h1 class='title-site'>{ Daniele Oliveira }</h1>
+                    <h2 class='subtitle-site'>Jr. Web Developer</h2>
+                </div>
+            </header>
+        </div>
+
+        <selection class="'portfolio">
+            <div class="grid">
+                
+                <figure class="img-portfolio">
+                    <img class="img-portfolio" src="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </selection>
+
+        <selection class="contato"   id="contato">
+        <div class="icons">
+            <a target="_blank" href="https://github.com/DanieleOliveira1">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            <a target="_blank" href="https://codepen.io/DanieleOliveira">
+                <i class="fab fa-codepen"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/daniele-oliveira-03bb6b173/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/daniele_sousa0/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        </selection>
+
+    </body>
+
+</html>
+
+<script>
+
+    function typeWrite(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+        textoArray.forEach(function(letra, i){   
+            setTimeout(function(){
+            elemento.innerHTML += letra;
+            }, 230 * i)
+
+        });
+    }
+    const titulo = document.querySelector('.subtitle-site');
+    typeWrite(titulo);
+
+</script>
