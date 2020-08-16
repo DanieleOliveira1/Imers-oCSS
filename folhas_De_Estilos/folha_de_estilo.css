@@ -10,6 +10,7 @@ body {
     /*background-image: url("https://i.github-camo.com/9cb3e21999f92079ca5393b718784f81be458afa/68747470733a2f2f636c6f75642e67697468756275736572636f6e74656e742e636f6d2f6173736574732f3139333836342f31323238383432372f36316665323131342d626130662d313165352d393833322d3938383639313830643837662e676966");*/
     background-size: auto 220vh;
     height: 100vh;
+   
 }
 /*Se a tela tiver pelo menos 400px vai carregar estes estilos - aumenta a letra para telas maiores*/
 /*breakpoint*/
@@ -44,7 +45,7 @@ header{
     height: 580px;
     filter:  blur(3.5px);
     background-size: auto 240vh;
-    height: 100vh;
+    height: 150vh;
 
 }
 
@@ -56,7 +57,7 @@ header{
     width: 100%;
     height: 100%;
     content: '';
-    background-color: rgba(153, 119, 130, 0.3);
+    background-color: rgba(206, 205, 185, 0.8);
 }
 
 
@@ -76,9 +77,9 @@ a {
 }
 
 .menu {
-    background-color: white;
+   
     position:fixed;
-    width:100vw;
+    
     top:0;
 }
 
@@ -86,36 +87,50 @@ a {
     display:block;
     padding:10px 20px;
     transition:background-color 1s, color 0.9s;
+    font-size:20px;
 }
 
     .menu a:hover {
-        background-color: rgba(200, 170, 180, 0.2);
-        color: rgba(200, 150, 150, 0.2);
+        color: #293858;
+        transform:scale(1.35);
     }
 .menu li {
         list-style: none;
+        
 }
 
 .menu ul {
         display: flex;
-        justify-content: space-around;
-        background-color: rgba(200, 170, 180, 0.2);
+        margin-right: 50px;
+        
+        margin-left: 130%;
+}
+
+.tittle{
+    /*margin-left: 40%; */
+    margin-top: 250px;
+    /* display: flex; */
+    /* margin: 5px; */
+    /* margin-right: -70px; */
+    padding: 15px;
+    justify-content: space-between;
+    margin-left: 130px;
 }
 
 .title-site {
-    font-size: 2.8em;
+    font-size: 3.8em;
     font-family: 'Bebas Neue', cursive;
     display: block;
     position: relative;
     text-align:center;
-     color: #997782  ;
+     color: #293858;  
 }
 
 .subtitle-site {
     font-style: italic;
     font-family: 'Special Elite', cursive;
-    line-height: 2.5em;
-    color: #CCA4A6;
+    line-height: 3.2em;
+    color: #C28C2E;
     text-align: center;
 }
 
@@ -138,20 +153,41 @@ a {
 
 .contato a {
     position: relative;
-    color: rgb(206, 166, 171);
+    color: rgba(206, 205, 185, 0.8);
     font-size: 1.9em;
     align-content: center;
     padding: 15px 20px;
-    top: 550px;
+    top: 715px;
 }
     .contato a:active, /*usuário clica no elemen*/
     .contato a:hover {
         text-decoration: none;
-        text-shadow: 0px 0px 15px rgb(206, 166, 171);
-        color: rgb(206, 166, 171);
+        text-shadow: 0px 0px 15px rgba(206, 205, 185, 0.95);
+        transform:scale(1.3);
     }
 .contato .icons {
     
     top: 550px;
 
+}
+
+.contatos{
+    margin-top:-150px;
+}
+
+.contatos li{
+    padding:5px;
+}
+
+.imagemInicial{
+    margin-right: 100px;
+    height: 700px;
+    margin-left: -340px;
+    margin-top: 295px;
+}
+
+.inicio{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
