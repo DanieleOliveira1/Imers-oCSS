@@ -183,17 +183,18 @@ a {
     height: 700px;
     margin-left: -420px;
     margin-top: 295px;
-    box-shadow: 10px 15px 15px 8px rgba(41, 56, 88, 0.5);
+    box-shadow: 15px 15px 15px 8px rgba(41, 56, 88, 0.5);
     transition:  0.9s;
 }
+    .imagemInicial:hover{
+        transform: translateX(315px);
+        border-radius:60px;
+        align-content: center;
+        transition:  0.9s;
+        box-shadow: 50px 15px 15px 1000px rgba(41, 56, 88, 0.5);
+        
+    }
 
-.imagemInicial:hover{
-    transform: translateX(315px);
-    border-radius:60px;
-    align-content: center;
-    transition:  0.9s;
-
-}
 
 .inicio{
     display:flex;
