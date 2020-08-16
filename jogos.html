@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogos</title>
+        <link rel="stylesheet" href="./folhas_De_Estilos\jogos.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab&family=Julius+Sans+One&family=Montserrat+Alternates:ital,wght@1,200&family=Orbitron&family=Press+Start+2P&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" type="imagem/png" href="https://image.flaticon.com/icons/png/512/74/74971.png" />
+
+    </head>
+    <body>
+        <div class="corpo">
+            <header>
+                <input type="checkbox" id="control-nav" />
+                <label for="control-nav" class="control-nav">
+
+                </label>
+                <label for="control-nav" class="control-nav-close"></label>
+                <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+                <nav class='menu'>
+                    <ul>
+                        <li><img src="./src/img/perfil5.jpg" /></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href='projetos.html'>Projetos</a></li>
+                        <li><a href='sobre.html'>Sobre</a></li>
+                        <li><a href='jogos.html'>Jogos</a></li>
+                        <li><h3> Desenvolvido, bagunçado e um <br />pouco copiado por Daniele Oliveira.</h3></li>
+                    </ul>
+                </nav>
+
+
+            </header>
+            <main>
+                <h2 class="subtitle-site"> 🎮 Jogos</h2>
+                <p class="projetos-text">Sites e jogos que desenvolvi durante a quarentena.</p>
+                <selection class="portfolio">
+                    <div class="grid">
+                        <iframe src="https://editor.p5js.org/DanieleOliveira1/embed/mipzG2-KD"></iframe>
+                        <iframe src="https://editor.p5js.org/DanieleOliveira1/embed/KXxQKxd7Y"></iframe>
+                        <iframe src="https://imers-o-react-git-master.danieleoliveira1.vercel.app/"></iframe>
+                    </div>
+                </selection>
+
+            </main>
+        </div>
+    </body>
+</html>
+<script>
+
+    function typeWrite(elemento) {
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = ' ';
+        textoArray.forEach(function (letra, i) {
+            setTimeout(function () {
+                elemento.innerHTML += letra;
+            }, 230 * i)
+
+        });
+    }
+    const titulo = document.querySelector('.subtitle-site');
+    typeWrite(titulo);
+
+</script>
