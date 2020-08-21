@@ -15,7 +15,7 @@ body {
 /*Se a tela tiver pelo menos 400px vai carregar estes estilos - aumenta a letra para telas maiores*/
 /*breakpoint*/
 
-@media (min-width: 200px) {
+@media (min-width: 260px) {
 
     .imagemInicial {
         /* margin-right: 20px; */
